@@ -1,4 +1,4 @@
-data = readtable('HeatMap.xlsx'); % Reemplaza con tu archivo
+data = readtable('HeatMap.xlsx'); %Table name
 
 variables = {'Area', 'Longitud', 'VelocidadNormalizada', 'LongitudDeOndaNormalizada', 'AmplitudDeOndaNormalizada', 'Coleteos'};
 variableLabels = {'Área', 'Longitud', 'Velocidad normalizada', 'Longitud de onda normalizada', 'Amplitud de onda normalizada', 'Coleteos'}; % Nuevas etiquetas
@@ -47,3 +47,4 @@ heatmap(variableLabels, cepaLabels, normalizedData(dendrogramOrder, :), ...
     'Colormap', greenToRedColormap, 'ColorLimits', [0, 0.5], 'CellLabelColor', 'none');
 
 colorbar;
+
